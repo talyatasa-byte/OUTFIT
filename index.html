@@ -414,7 +414,7 @@ html{overscroll-behavior:none}
 .t2 .ti u{position:absolute;left:0;top:39px;width:56px;text-align:center;text-decoration:none;font-size:16px;line-height:18px;color:var(--ink);font-variant-numeric:tabular-nums}
 .t2 .td{position:absolute;left:299.75px;top:23.9px;width:8.5px;height:8.5px;border-radius:50%;background:var(--ink)}
 .s1{overflow:hidden}
-</style></head>
+</style><style id="resp">.ph{height:calc(var(--HN,844)*1px)}.vp{height:calc(var(--HN,844)*1px*var(--s,1))}#ph #dt,#ph #chip,#ph .tl,#ph>button{translate:0 var(--dy,0px)}#ph svg.cv:not(#bgx){translate:0 calc(var(--dy,0px)/2)}</style></head>
 <body>
 <div class="vp" id="vp"><div class="ph" id="ph">
  <div class="sc" id="sc">
@@ -782,7 +782,7 @@ $('#sd').onclick=e=>{const b=e.target.closest('button');if(!b)return;
  else if(b.closest('.seg')){S[b.closest('.seg').dataset.k]=isNaN(+b.dataset.v)?b.dataset.v:+b.dataset.v;home()}
  else if(b.classList.contains('tg'))b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')!='true')};
 $('#q').oninput=home;
-function fit(){if(window.top===window.self&&innerWidth<=600){document.body.style.padding='0';document.body.style.gap='0';sc=Math.min(innerWidth/390,innerHeight/844)}else sc=Math.min(1,(innerWidth-24)/390);document.documentElement.style.setProperty('--s',sc)}
+function fit(){const R=document.documentElement.style;let HN=844;if(window.top===window.self&&innerWidth<=600){document.body.style.padding='0';document.body.style.gap='0';sc=Math.min(innerWidth/390,innerHeight/780);HN=Math.round(Math.min(1000,Math.max(780,innerHeight/sc)))}else sc=Math.min(1,(innerWidth-24)/390);R.setProperty('--HN',HN);R.setProperty('--dy',(HN-844)+'px');R.setProperty('--s',sc)}
 if(innerWidth>430)$('#lb').classList.add('open');addEventListener('resize',fit);fit();const hm=null;if(hm&&hm[3]!=='')S.dl=+hm[3];if(hm&&hm[4]!=='')S.mm=+hm[4];$('#ph').dataset.mm=S.mm;$('#ph').dataset.lbm=S.lbm;$('#ph').dataset.lay=hm?hm[1]:1;$('#ph').dataset.pos=hm&&hm[2]?'d':'u';home();setLay();
 
 ;(()=>{const ph=$('#ph'),K='wxpos8',O={cx:-4,cy:14,kx:-4,ky:97},R=document.documentElement;
