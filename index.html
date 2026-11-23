@@ -414,8 +414,16 @@ html{overscroll-behavior:none}
 .t2 .ti u{position:absolute;left:0;top:39px;width:56px;text-align:center;text-decoration:none;font-size:16px;line-height:18px;color:var(--ink);font-variant-numeric:tabular-nums}
 .t2 .td{position:absolute;left:299.75px;top:23.9px;width:8.5px;height:8.5px;border-radius:50%;background:var(--ink)}
 .s1{overflow:hidden}
-</style><style id="resp">.ph{height:calc(var(--HN,844)*1px)}.vp{height:calc(var(--HN,844)*1px*var(--s,1))}#ph #dt,#ph #chip,#ph .tl,#ph>button{translate:0 var(--dy,0px)}#ph svg.cv:not(#bgx){translate:0 calc(var(--dy,0px)/2)}</style></head>
-<body>
+</style><style id="resp">.ph{height:calc(var(--HN,844)*1px)}.vp{height:calc(var(--HN,844)*1px*var(--s,1))}#ph #dt,#ph #chip,#ph .tl,#ph>button{translate:0 var(--dy,0px)}#ph svg.cv:not(#bgx){translate:0 calc(var(--dy,0px)/2)}</style><style id="splcss">#spl{position:fixed;inset:0;z-index:2147483000;background:#FDF2D2;color:#262B45;display:grid;place-items:center;animation:splout .45s ease 1.75s forwards}
+#spl svg{width:min(78vw,440px);height:auto;overflow:visible}
+#spl .ga{animation:spa 1.5s both}#spl .gb{animation:spb 1.5s both}
+#spl .rg{transform-box:fill-box;transform-origin:50% 50%;animation:spr 1.5s both}
+@keyframes spa{0%{transform:translateX(-105px);opacity:0;animation-timing-function:ease-out}22%{transform:translateX(-120px);opacity:1;animation-timing-function:cubic-bezier(.6,0,.9,.4)}58%{transform:translateX(0);opacity:1}100%{transform:translateX(0);opacity:1}}
+@keyframes spb{0%{transform:translateX(105px);opacity:0;animation-timing-function:ease-out}22%{transform:translateX(120px);opacity:1;animation-timing-function:cubic-bezier(.6,0,.9,.4)}58%{transform:translateX(0);opacity:1}100%{transform:translateX(0);opacity:1}}
+@keyframes spr{0%,56%{transform:scale(1)}62%{transform:scale(1.4);animation-timing-function:ease-out}85%,100%{transform:scale(1)}}
+@keyframes splout{to{opacity:0;visibility:hidden}}
+@media (prefers-reduced-motion:reduce){#spl .ga,#spl .gb,#spl .rg{animation:none}#spl{animation-delay:.6s}}</style></head>
+<body><div id="spl" aria-hidden="true"><svg viewBox="164 80 684 164" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><g class="ga"><path d="M225.8 241.6C192.2 241.6 170.6 223.6 170.6 183.6C170.6 142.8 192.2 124.8 226.6 124.8C260.2 124.8 281.2 142.4 281.2 182.8C281.2 223.4 260.4 241.6 225.8 241.6ZM226.2 216.6C241.6 216.6 249.2 207.2 249.2 184.2C249.2 159.4 241.6 149.8 226.2 149.8C211.2 149.8 202.6 159.2 202.6 183.2C202.6 206.4 210.4 216.6 226.2 216.6Z"/><path d="M349.6 241C318.8 241 298.6 223.6 298.6 187.6V126H329.2V183.2C329.2 203.8 336 214.6 350 214.6C362.8 214.6 370 205.8 370 186.2V126H400.6V183.6C400.6 223.2 380.8 241 349.6 241Z"/><path d="M447.6 240V150.8H417.6V126H509.6V150.8H479.6V240H447.6Z"/></g><g class="gb"><path d="M607.2 240V126H681V151H637.8V174.6H679V198.2H637.8V240H607.2Z"/><path d="M700.755 240V126H731.355V240H700.755Z"/><path d="M778.186 240V150.8H748.186V126H840.186V150.8H810.186V240H778.186Z"/></g></g><circle class="rg" cx="558" cy="117" r="23" fill="none" stroke="#FF8463" stroke-width="22"/></svg></div><script>(function(){const s=document.getElementById('spl');if(!s)return;if(window.top!==window.self){s.remove();return}setTimeout(()=>s.remove(),2300)})()</script>
 <div class="vp" id="vp"><div class="ph" id="ph">
  <div class="sc" id="sc">
   <div class="s1">
