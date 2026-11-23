@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#859fca">
 <title>פרוטוטייפ מזג אוויר - פריסות</title>
@@ -957,5 +957,5 @@ window.__idea=function(m){clear();mode=m;idleT=Date.now();(MODES[m]||MODES[0])()
 addEventListener('message',e=>{if(e.data&&typeof e.data.idea=='number')window.__idea(e.data.idea)});
 })();
 </script><script>addEventListener('load',()=>setTimeout(()=>{try{window.__idea(9);window.__pulse(1)}catch(e){}},600))</script>
-</body>
+<script>if('serviceWorker' in navigator&&location.protocol.startsWith('http')){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}))}</script></body>
 </html>
